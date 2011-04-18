@@ -6,7 +6,7 @@
 menu<br/>
 <ui:fragment rendered="#{identity.loggedIn}">
 	<h:form id="logoutForm">
-		<h:commandLink id="logout" action="#{identity.logout}">Logout</h:commandLink>
+		<h:commandLink id="logout" action="#{identity.logout}">Logout #{loggedUser.username}</h:commandLink>
 	</h:form><br/>
 	<h:link outcome="/private/productList" value="Products" /><br/>
 </ui:fragment>

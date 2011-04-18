@@ -8,6 +8,37 @@
 
 	<name>seam3infra</name>
 
+	<navigation-rule>
+		<from-view-id>/login.xhtml</from-view-id>
+		<navigation-case>
+			<from-action>#{identity.login}</from-action>
+			<if>#{identity.loggedIn}</if>
+			<to-view-id>/private/dbexample.xhtml</to-view-id>
+			<redirect/>
+				<!--view-param name="user.id" value="#{user.id}"/>
+			</redirect-->
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/private/*</from-view-id>
+		<navigation-case>
+			<if>#{identity.loggedIn == false}</if>
+			<to-view-id>/login.xhtml</to-view-id>
+			<redirect/>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-action>#{identity.logout}</from-action>
+			<if>#{true}</if>
+			<to-view-id>/login.xhtml</to-view-id>
+			<redirect/>
+		</navigation-case>
+	</navigation-rule>
+
 	<application>
 		<resource-bundle>
 			<base-name>messages</base-name>
