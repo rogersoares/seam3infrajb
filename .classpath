@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
+	<classpathentry kind="src" path="WEB-INF/src"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/picketlink-idm-api-1.5.0.Alpha02.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/picketlink-idm-common-1.5.0.Alpha02.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/picketlink-idm-core-1.5.0.Alpha02.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/picketlink-idm-spi-1.5.0.Alpha02.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/richfaces-components-api-4.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/richfaces-components-ui-4.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/richfaces-core-api-4.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/richfaces-core-impl-4.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/seam-catch-3.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/seam-config-xml-3.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/seam-faces-3.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/seam-international-3.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/seam-persistence-3.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/seam-security-3.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/seam-servlet-3.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/seam-solder-3.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/jars/hibernate-core.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/jars/hibernate-jpa-2.0-api.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/jars/weld-servlet-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/seam-remoting.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/jars/jsf-api.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

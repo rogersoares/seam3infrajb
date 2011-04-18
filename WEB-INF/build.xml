@@ -1,0 +1,43 @@
+<project basedir="." name="seam3infrajb6">
+	<property name="jboss-home" value="/home/roger/jakarta/jboss-6.0.0.Final"/>
+	<property name="build" value="${jboss-home}/server/default/deploy/seam3infra.war"/>
+
+	<path id="build.classpath">
+		<fileset dir="lib">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="jars">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="cleanAll" description="Deletes the build dir.">
+		<delete dir="${build}"/>
+	</target>
+
+	<target name="compile" description="Compiles webapp.">
+		<mkdir dir="${build}"/>
+
+		<copy todir="${build}">
+			<fileset dir="..">
+				<include name="**/*"/>
+				<exclude name="WEB-INF/classes/**/*"/>
+			</fileset>
+		</copy>
+
+		<javac srcdir="src/"
+			destdir="${build}/WEB-INF/classes/"
+			debug="true"
+			debuglevel="lines,vars,source"
+			includes="**/*.java"
+			classpathref="build.classpath"/>
+
+		<copy todir="${build}/WEB-INF/classes" >
+			<fileset dir="src/">
+				<include name="**/*.properties"/>
+				<include name="**/*.xml"/>
+			</fileset>
+		</copy>
+	</target>
+
+</project>

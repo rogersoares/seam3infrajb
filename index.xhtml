@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:d="http://seam3infra.com.br/demo">
+
+<ui:composition template="/WEB-INF/facelets/layout/mainlayout.xhtml">
+
+<ui:define name="body">
+<rich:tabPanel switchType="client">
+
+	<rich:tab header="tab1">
+	<h:link value="product list" outcome="/private/productList"/>
+	</rich:tab>
+
+	<rich:tab header="tab2">
+	<h:link value="view user 1 details" outcome="/private/dbexample">
+		<f:param name="user.id" value="1"/>
+	</h:link>
+	</rich:tab>
+
+</rich:tabPanel>
+<d:demo>taglib</d:demo>
+</ui:define>
+
+</ui:composition>
+</html>
